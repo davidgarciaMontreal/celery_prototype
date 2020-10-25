@@ -1,0 +1,58 @@
+
+ -------------- celery@antonios-iMac.local v5.0.1 (singularity)
+--- ***** ----- 
+-- ******* ---- macOS-10.13.6-x86_64-i386-64bit 2020-10-25 13:22:37
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         tasks:0x10c5c14f0
+- ** ---------- .> transport:   redis://127.0.0.1:6379/0
+- ** ---------- .> results:     redis://127.0.0.1:6379/0
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . tasks.data
+  . tasks.square_root
+
+[2020-10-25 13:22:37,599: WARNING/MainProcess] /Users/antoniogarcia/PycharmProjects/pythonProject/env_3p/lib/python3.8/site-packages/celery/app/utils.py:204: CDeprecationWarning: 
+    The 'CELERY_ACCEPT_CONTENT' setting is deprecated and scheduled for removal in
+    version 6.0.0. Use the accept_content instead
+
+  deprecated.warn(description=f'The {setting!r} setting',
+
+[2020-10-25 13:22:37,599: WARNING/MainProcess] /Users/antoniogarcia/PycharmProjects/pythonProject/env_3p/lib/python3.8/site-packages/celery/app/utils.py:204: CDeprecationWarning: 
+    The 'CELERY_RESULT_SERIALIZER' setting is deprecated and scheduled for removal in
+    version 6.0.0. Use the result_serializer instead
+
+  deprecated.warn(description=f'The {setting!r} setting',
+
+[2020-10-25 13:22:37,599: WARNING/MainProcess] /Users/antoniogarcia/PycharmProjects/pythonProject/env_3p/lib/python3.8/site-packages/celery/app/utils.py:204: CDeprecationWarning: 
+    The 'CELERY_TASK_SERIALIZER' setting is deprecated and scheduled for removal in
+    version 6.0.0. Use the task_serializer instead
+
+  deprecated.warn(description=f'The {setting!r} setting',
+
+[2020-10-25 13:22:37,600: WARNING/MainProcess] /Users/antoniogarcia/PycharmProjects/pythonProject/env_3p/lib/python3.8/site-packages/celery/app/utils.py:204: CDeprecationWarning: 
+    The 'CELERY_RESULT_BACKEND' setting is deprecated and scheduled for removal in
+    version 6.0.0. Use the result_backend instead
+
+  deprecated.warn(description=f'The {setting!r} setting',
+
+[2020-10-25 13:22:37,600: WARNING/MainProcess] Please run `celery upgrade settings path/to/settings.py` to avoid these warnings and to allow a smoother upgrade to Celery 6.0.
+[2020-10-25 13:22:37,857: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2020-10-25 13:22:37,870: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-25 13:22:38,908: INFO/MainProcess] mingle: all alone
+[2020-10-25 13:22:38,934: INFO/MainProcess] celery@antonios-iMac.local ready.
+[2020-10-25 13:24:14,036: INFO/MainProcess] Received task: tasks.data[27d2cdf7-bbab-4db7-8d59-3c5bf6e09808]  
+[2020-10-25 13:24:14,041: INFO/MainProcess] Received task: tasks.data[4967355d-7639-405a-b686-e8c87e7b4843]  
+[2020-10-25 13:24:14,044: INFO/MainProcess] Received task: tasks.data[c79693b7-e9ef-4208-b2e0-5a6fb68c418d]  
+[2020-10-25 13:24:14,047: INFO/MainProcess] Received task: tasks.data[39185ad9-aa83-47c3-90e7-eaffe3f3e581]  
+[2020-10-25 13:24:19,050: INFO/ForkPoolWorker-8] Task tasks.data[27d2cdf7-bbab-4db7-8d59-3c5bf6e09808] succeeded in 5.011945127999994s: <tasks.Data object at 0x10ccdf550>
+[2020-10-25 13:24:24,056: INFO/ForkPoolWorker-8] Task tasks.data[4967355d-7639-405a-b686-e8c87e7b4843] succeeded in 5.004590546000003s: <tasks.Data object at 0x10ccdf550>
+[2020-10-25 13:24:29,060: INFO/ForkPoolWorker-8] Task tasks.data[c79693b7-e9ef-4208-b2e0-5a6fb68c418d] succeeded in 5.004038549000001s: <tasks.Data object at 0x10ccdf550>
+[2020-10-25 13:24:34,065: INFO/ForkPoolWorker-8] Task tasks.data[39185ad9-aa83-47c3-90e7-eaffe3f3e581] succeeded in 5.003886562999995s: <tasks.Data object at 0x10ccdf550>
+

@@ -1,0 +1,7 @@
+13:31 $ python task_dispatcher.py --parallel no --number 4
+running in threaded mode
+INFO:root:The Overall time taken is 5.23698616027832
+INFO:root:The Overall time taken is 10.241842985153198
+INFO:root:The Overall time taken is 15.246917009353638
+INFO:root:The Overall time taken is 20.251650094985962
+
