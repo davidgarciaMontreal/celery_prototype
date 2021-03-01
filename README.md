@@ -6,7 +6,7 @@
 ## Running
 Terminal one:
 
-```celery -A tasks  worker --loglevel=INFO```
+```celery -A tasks  worker --loglevel=INFO  --pool=eventlet```
 
 Terminal two:
 

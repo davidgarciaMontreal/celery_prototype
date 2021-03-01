@@ -36,4 +36,3 @@ def data():
     time.sleep(5)
     return Data()
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
